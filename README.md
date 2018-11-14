@@ -25,5 +25,8 @@ Node.js
 1. Descargar los archivos del repositorio. 
 2. Correr el siguiente comando. Para instalar dependencias.
 `npm install --save`
-3. Correr el siguiente comando.
-`
+3. Correr el siguiente comando. Para levantar servidor.
+`node server.js`
+4. Abrir 2 ventanas en el navegador desde: 
+`http://localhost:7777/`
+5. Enviar mensaje desde cualquiera de las dos ventanas. El emisor (la segunda ventana) recibe el mensaje encriptado y puede des-encriptarlo. 
