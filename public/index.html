@@ -1,0 +1,59 @@
+<html>  
+    <head>
+        <title> Ultra Secret Chat </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style>
+          #dec {
+              display: none;
+          }
+          .center {
+                margin: auto;
+                width: 60%;
+                border: 1px dotted lightgrey;
+                padding: 10px;
+            }
+        body {
+            background-color: whitesmoke;
+            color: black;
+        }
+        div.b {
+            word-wrap: break-word;
+        }
+      </style>
+    </head>
+    <body>
+        <div class="center">
+        <h1>UltraSecret Chat</h1> 
+        <img src="spy_PNG21.png" alt="Spy" style="width:200px; align-self:center; padding: 30px">
+        <form>
+            <input id="message" type="text" class="form-control" placeholder="mensaje">
+            <div style="padding:10px">
+                <input type="submit" value="Enviar" class="btn btn-success" >
+            </div>
+        </form>
+        </div>
+        <div class="center b">
+        <ul style="padding:10px" id="thread"></ul>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+        <script src="/socket.io/socket.io.js"></script>
+
+        <script src="client.js"></script>  
+    </body>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("dec");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+ </html>  

@@ -1,0 +1,15 @@
+// proceso de encriptado. 
+    var n = rsa.find_n();
+    var e = rsa.find_e(n[0],n[1]);
+    var frase = "";
+    var asciichar = "";
+    for(var i = 0; i<=message.length-1; i ++){
+        //leyendo caracter por caracter
+        var char = message.charAt(i);
+        // encriptando el caracter leido desde ascii.
+        asciichar = rsa.enc(n[2],e[0],char.charCodeAt(0))
+
+        //secret[i] = asciichar
+        frase += asciichar.toString();
+    }
+    // ------
